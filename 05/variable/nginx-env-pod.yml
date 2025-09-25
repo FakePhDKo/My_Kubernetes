@@ -11,4 +11,4 @@ spec:
         - containerPort: 80
       env:
         - name: MYVAR
-          value: testvalue
+          value: "testvalue"
