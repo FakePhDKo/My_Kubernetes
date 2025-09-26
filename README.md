@@ -20,6 +20,8 @@
 
 + 05(파드 심화 학습): 초기화 컨테이너, Liveness 프로브, 멀티 컨테이너, 리소스 제한, 싱글 컨테이너 파드, 환경변수 등 쿠버네티스 심화 개념들을 다룬 실습 폴더들입니다.
 
++ 06(워크로드 학습): ReplicaSet, Deployment, Replication Controller, DaemonSet, StatefulSet 등 워크로드의 실습을 다룬 폴더들입니다. 
+
 ## 📂 파일 구조
 ```
 03/
