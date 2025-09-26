@@ -41,4 +41,12 @@
 ├── variable/
 ├── lab/
 └── single/
+
+06/
+├── deploy/
+├── ds/
+├── labs/rolling/
+├── rc/
+├── rs/
+└── sts/
 ```
