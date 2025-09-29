@@ -16,21 +16,21 @@
 + 가용성: Liveness 및 Readiness Probe를 설정하여 컨테이너의 상태를 확인하고, 애플리케이션의 안정성을 높이는 방법을 익혔습니다.
 
 ##📂 프로젝트 디렉터리
-+ 01_pod/: Pod 오브젝트의 생성 및 생명주기 관리.
++ cj: CronJob 예시 실습.
 
-+ 02_deployment/: Pod의 복제본과 배포 전략을 관리하는 Deployment.
++ deploy: nginx로 서버를 구성하고 replicas 설정을 테스트하는 Deployment.
 
-+ 03_service/: Pod를 외부에 노출하고 통신을 설정하는 Service.
++ ds: DaemonSet 예시 실습.
 
-+ 04_volume/: PersistentVolume과 PersistentVolumeClaim을 이용한 영구 스토리지 관리.
++ job: CentOS 7버전 컨테이너 내부의 쉘에 명령어를 전달하여 job 실습.
 
-+ 05_secrets_configmaps/: Secret과 ConfigMap을 이용한 민감 데이터 및 설정 관리.
++ rc: Replication Controller 실습.
 
-+ 06_network_policy/: Pod 간의 네트워크 트래픽을 제어하는 NetworkPolicy.
++ rs: ReplicaSet 실습.
 
-+ 07_probes/: Liveness, Readiness, Startup Probe를 이용한 애플리케이션 상태 점검.
++ sts: StatefulSet 실습.
 
-+ 08_commands/: 자주 사용되는 kubectl 명령어 실습.
++ labs: Deployment 실습.
 
 ## 🛠️ 실행 방법
 각 서브 디렉터리로 이동하여 매니페스트 파일(.yml)을 확인하고, 아래 명령어를 통해 직접 클러스터에서 실습을 진행해 볼 수 있습니다.
