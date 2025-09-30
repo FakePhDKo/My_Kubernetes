@@ -1,0 +1,37 @@
+# Deployment
+---
+kind: Deployment
+apiVersion: apps/v1
+metadata:
+  name: pay-deploy
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      name: pay
+  template:
+    metadata:
+      name: pay-pod
+      labels:
+        name: pay
+    spec:
+      containers:
+        - name: pay-container
+          image: whatwant/node-web:2.0
+          ports:
+            - containerPort: 8080
+
+# Service - ClusterIP
+---
+kind: Service
+apiVersion: v1
+metadata:
+  name: pay-svc
+spec:
+  type: ClusterIP
+  selector:
+    name: pay
+  ports:
+    - port: 80
+      targetPort: 8080
+      protocol: TCP
